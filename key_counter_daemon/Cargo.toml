@@ -1,0 +1,14 @@
+# Cargo.toml
+#
+# This file defines the project's metadata and dependencies.
+
+[package]
+name = "key_counter_daemon"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+evdev = "0.12"
+nix = { version = "0.27", features = ["fs"] }
+rodio = "0.17"
+rand = "0.8" # Added for random number generation
